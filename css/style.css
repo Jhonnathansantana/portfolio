@@ -1,24 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap");
-nav {
-  background-color: grey;
+.nav-bar {
+  grid-column: 1/2;
+  justify-content: center;
   margin: 0px;
-  position: static;
-  height: 1000px; }
+  position: fixed;
+  height: 100%;
+  padding: 2rem;
+  z-index: 10;
+  overflow: hidden;
+}
+.nav-bar .menu {
+  list-style: none;
+}
 
 body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.5rem;
   color: #363636;
   margin: 0px;
-  padding: 0px; }
-  body h1, body h2, body h3 {
-    font-weight: 300;
-    color: #121212; }
+  padding: 0px;
+  background-color: whitesmoke;
+}
+body h1, body h2, body h3 {
+  font-weight: 300;
+  color: #121212;
+}
 
 .container-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 10px;
-  margin: 0px; }
+  grid-template-columns: [nav-column] 1fr [content-column] 2fr;
+  grid-gap: 10px;
+  margin: 0px;
+}
+
+.container-content {
+  grid-column: 2/2;
+  background-color: white;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
