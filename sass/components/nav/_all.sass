@@ -1,18 +1,30 @@
+@import "../_color"
 .nav-bar
     grid-column: 1/2
-    justify-content: center
-    margin: 0px
     position: fixed
     height: 100%
-    padding: 2rem
     z-index: 10
-    overflow: hidden
+    background-color: $background-sidebar
+    width: 20%
+    color: $content-siderbar
+    font-size: 1em
+    
 
-    .menu
-        list-style: none
-        
-        
+.menu
+    list-style: none
 
+    a 
+      text-decoration: none
+      color:  $content-siderbar
+      &:hover
+          text-decoration: underline 2px
+
+@media (min-width: 0px) and (max-width: 1024px)
+        .nav-bar
+            left: -280px
+            display: flex
+        .container-grid
+            grid-template-columns: auto !important
 
     
     
