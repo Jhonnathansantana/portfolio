@@ -9,14 +9,19 @@
 </head>
 <body>
     <div class="container-grid">
-        <div class="nav-bar">
+        <div class="btn-menu"><i onclick="openav()" id="action-menu" class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="nav-bar" id="navbar">
              <nav>
-                <h2>Contenido</h2>
-                <ul class="menu">
-                    <li><i class="fa fa-code-fork" aria-hidden="true"></i> <a href="#">Experience</a></li>
-                    <li><i class="fa fa-code" aria-hidden="true"></i><a href="#">Projects</li>
-                    <li><i class="fa fa-certificate" aria-hidden="true"></i><a href="#">Skills</a></li>
-                </ul>
+                <div class="title-nav">
+                    <h1>Freelancer </h1>
+                        <!-- <h2>Consultor Digital</h2> -->
+                    </div>
+                <div class="menu">
+                    <span id="exit" onclick="closenav()" >&times;</span>
+                    <section class="item-menu"> <i class="fa fa-code-fork" aria-hidden="true"></i> <a href="#">Experience</a> </section>
+                    <section class="item-menu"> <i class="fa fa-code" aria-hidden="true"></i><a href="#">Projects</a>  </section>
+                    <section class="item-menu"> <i class="fa fa-certificate" aria-hidden="true"></i><a href="#">Skills</a> </section>
+                </div>
                 
             </nav>
         </div>
@@ -46,4 +51,5 @@
     </div>
    
 </body>
+<script src="script.js"></script>
 </html>

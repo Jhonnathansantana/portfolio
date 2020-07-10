@@ -3,30 +3,103 @@
     grid-column: 1/2
     position: fixed
     height: 100%
-    z-index: 10
+    z-index: 100
     background-color: $background-sidebar
     width: 20%
     color: $content-siderbar
     font-size: 1em
     
 
-.menu
-    list-style: none
+    
 
-    a 
-      text-decoration: none
-      color:  $content-siderbar
-      &:hover
-          text-decoration: underline 2px
+.menu
+    width: 100%
+    %style-links 
+        text-decoration: none
+        color:  $content-siderbar
+        font-family: Courier New, Courier, monospace
+        font-weight: 400
+        
+        a 
+            text-decoration: none
+            color: $content-siderbar
+        &:hover
+          border-right: solid 5px $green-effect
+          background-color: black
+
+          a 
+            text-decoration: none
+          
+        
+    .item-menu 
+        @extend %style-links
+        padding: 4%
+        
+
+.item-menu i
+    margin-right: 10px
+    
+.open-menu
+      left: 0px !important
+      width: 300px
+      
+      
+      
+     
+     
 
 @media (min-width: 0px) and (max-width: 1024px)
         .nav-bar
-            left: -280px
-            display: flex
+            left: -400px
         .container-grid
             grid-template-columns: auto !important
 
+            #exit
+                pointer-events: auto
+                color: $content-siderbar
+
+    
+#exit
+    position: absolute
+    right: 10px
+    padding: 0px
+    top: 0px
+    font-size: 1.5em
+    cursor: pointer
+    pointer-events: none
+    color: $background-sidebar
+    
+.title-nav
+    padding: 1rem
+    h1 
+        border-left: solid 5px $green-effect
+        color: $green-effect
+        padding: 5%
+        font-weight: 400
+        margin-top: 2em
+        margin-bottom: 1em   
+    h2 
+        color: $green-effect
+        margin: 0px
+        
+.btn-menu
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    z-index: 50
+    background-color: $green-effect
+    color: $content1
+    width: 100px
+    height: 100px
+    position: fixed
+    border-radius: 0px 90px 90px 0px
+    cursor: pointer
+    font-size: 1.5em
     
     
-   
+
+
+
+
     
