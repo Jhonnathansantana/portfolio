@@ -19,13 +19,15 @@
         color:  $content-siderbar
         font-family: Courier New, Courier, monospace
         font-weight: 400
+     
         
         a 
             text-decoration: none
             color: $content-siderbar
+            
         &:hover
           border-right: solid 5px $green-effect
-          background-color: black
+          background-color: $hover-color
 
           a 
             text-decoration: none
@@ -35,10 +37,11 @@
         @extend %style-links
         padding: 4%
         
+        
 
 .item-menu i
     margin-right: 10px
-    
+
 .open-menu
       left: 0px !important
       width: 300px
@@ -71,16 +74,27 @@
     
 .title-nav
     padding: 1rem
+    margin-top: 1em
+    margin-bottom: 1em
+
     h1 
-        border-left: solid 5px $green-effect
+
         color: $green-effect
-        padding: 5%
-        font-weight: 400
-        margin-top: 2em
-        margin-bottom: 1em   
-    h2 
+        font-weight: 600
+        margin-bottom: 0px
+        margin-top: 0px
+        
+          
+    h2,h3
         color: $green-effect
         margin: 0px
+        padding: 0px
+
+    .fa-terminal
+        font-size: 2em
+        font-weight: 600
+        color: $green-effect
+         
         
 .btn-menu
     display: flex
@@ -93,10 +107,46 @@
     width: 100px
     height: 100px
     position: fixed
-    border-radius: 0px 90px 90px 0px
+    border-radius: 0px 90px 90px 90px
     cursor: pointer
     font-size: 1.5em
     
+.nav-footer-container
+    display: grid
+    grid-template-rows: repeat (3, 1fr)
+    grid-template-areas: "a" "b" "c"
+
+%btn
+    padding: 0.5rem
+    background-color: $hover-color
+    color: $green-effect
+    border: solid 1px $green-effect
+    cursor: pointer
+    text-align: center
+    
+
+.btn
+    @extend %btn
+    &:hover
+        background-color: $green-effect
+        color: $content1
+        transition: all 0.4s
+        box-shadow:0px 0px 1px 0px
+        border: none
+        &:active
+            box-shadow: inset 0px 0px 10px 0px
+        
+
+.descargas
+    grid-area: c
+    margin: 1em
+    font-size: 0.8em
+
+.area-b
+    grid-area: b
+
+.area-a
+    grid-area: a
     
 
 

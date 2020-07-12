@@ -1,7 +1,45 @@
 @import "../_color"
-.section
+
+%sectionf  
     background-color: $background-card
     box-shadow: 0px 0px 2px 0px
-    padding: 2%
+    border-radius: 10px
+
+.section
+    @extend %sectionf
     margin: 2%
+    padding: 2%
+
+.first-title
+    text-align: right
+
+.portada
+    display: grid
+    grid-template-columns: 2fr 2fr 1fr
+    grid-template-areas: "d e f"
     
+
+
+.area-d
+    background-color: none
+    grid-area: d
+
+.area-e
+    background-color: white 
+    grid-area: e
+    border-radius: 10px 0px 0px 10px
+    @extend %sectionf
+
+.area-f
+    background-color: $background-sidebar
+    grid-area: f
+    border-radius: 0px 10px 10px 0px
+    @extend %sectionf
+   
+    
+    h1
+        writing-mode: vertical-lr
+        margin-top: 1rem
+        margin-bottom: 1rem
+        color: $green-effect
+     
