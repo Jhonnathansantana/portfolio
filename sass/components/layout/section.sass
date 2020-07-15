@@ -10,36 +10,34 @@
     margin: 2%
     padding: 2%
 
-.first-title
+.container-home
+    display: flex
+    flex-direction: row
+    align-items: space-between
+    background-color: $green-effect
+    height: 100vh
+    overflow: hidden
+    
+    
+    
+    
+.postscript
+    display: flex
+    flex-direction: column
     text-align: right
-
-.portada
-    display: grid
-    grid-template-columns: 2fr 2fr 1fr
-    grid-template-areas: "d e f"
+    padding: 2%
+    width: 60%
     
 
-
-.area-d
-    background-color: none
-    grid-area: d
-
-.area-e
-    background-color: white 
-    grid-area: e
-    border-radius: 10px 0px 0px 10px
-    @extend %sectionf
-
-.area-f
-    background-color: $background-sidebar
-    grid-area: f
-    border-radius: 0px 10px 10px 0px
-    @extend %sectionf
-   
+.img-home
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    width: 40%
     
-    h1
-        writing-mode: vertical-lr
-        margin-top: 1rem
-        margin-bottom: 1rem
-        color: $green-effect
-     
+    img 
+        filter: grayscale(100%)
+    
+.container-experience
+      background-color: yellow
+    

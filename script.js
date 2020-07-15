@@ -9,3 +9,9 @@ function closenav(){
     ex.classList.remove("open-menu");
 };
 
+/*function alt (){
+    var v = document.querySelector("c-home").clientHeight;
+    //const exp =document.querySelector("#experience");
+    //exp.style.add()
+    alert(v);
+};*/
