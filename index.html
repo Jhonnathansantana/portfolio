@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="img/font-awesome/css/font-awesome.min.css">
     <title>Portfolio</title>
 </head>
-<body onload="alt();">
+<body>
     <div class="container-grid">
         <!-- SideBar Menu-->
         <div class="btn-menu"><i onclick="openav()" id="action-menu" class="fa fa-bars" aria-hidden="true"></i></div>
-        <div class="nav-bar" id="navbar">
+        <div class="nav-bar" id="navbar" onclick="closenav()">
             <nav>
                 <div class="title-nav">
                     <span>
@@ -23,7 +23,8 @@
                 
                 <div class="menu">
                     <span id="exit" onclick="closenav()" >&times;</span>
-                    <section class="item-menu"> <i class="fa fa-code-fork" aria-hidden="true"></i> <a href="experience">Experience</a> </section>
+                    <section class="item-menu"> <i class="fa fa-user" aria-hidden="true"></i> <a href="#aboutme">AboutMe</a> </section>
+                    <section class="item-menu"> <i class="fa fa-code-fork" aria-hidden="true"></i> <a href="#experience">Experience</a> </section>
                     <section class="item-menu"> <i class="fa fa-code" aria-hidden="true"></i><a href="#">Projects</a>  </section>
                     <section class="item-menu"> <i class="fa fa-certificate" aria-hidden="true"></i><a href="#">Skills</a> </section>
                 </div>
@@ -46,30 +47,71 @@
         
             <div class="container-home" id="c-home">
                 <div class="img-home">
-                    <img src="img\cara.png" alt="">
+                    <!--img src="img\cara.png" alt=""-->
                 </div>
                 <div class="postscript">
-                    <h1>{ FullStack }</h1>
-                    <section>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ab earum accusamus, vel, magnam vitae veniam fugiat suscipit dolorum fugit nesciunt quam animi, illo perferendis harum neque in molestias minima?
-                        </p>
-                    </section>  
+                    <h1>Developer FullStack</h1>
+                    <section class="welcome">
+                        <h2>
+                            Welcome! My Name is, <span id="miname"> Jhonnathan. </span>
+                        </h2>
+                    </section>
+                    
+                        <div class="btn contact">
+                            <span><a>ContactMe! </a> </span><i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                    
                 </div> 
             </div> 
         
 
         <!-- Content-->
-        <div id="experience" class="container-experience">
-            <section class="section">
-                <h1>Titulo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iste esse, odio ipsum laudantium earum atque molestiae. Quasi mollitia quidem, officiis qui velit neque officia id in est consectetur iusto.</p>
-            </section>
+
+       <div  id="aboutme" >
             
-            <section class="section">
-                <h1>Titulo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iste esse, odio ipsum laudantium earum atque molestiae. Quasi mollitia quidem, officiis qui velit neque officia id in est consectetur iusto.</p>
-            </section>
+            <div class="container-aboutme">
+                   
+                    <section id="content-aboutme">
+                        <span>
+                            <h1> <i class="fa fa-user" aria-hidden="true"></i> AboutMe! </h1>
+                        </span>
+                        <p>
+                            Adicto al conocimiento. Creo que este es mi peor cualidad todo el tiempo quiero saber, me la paso investigando, experimentando y haciendo cosas nuevas. Mi primer amor en informática fue la Infraestructura llevo varios años trabajando como Consultor de infraestructura y de ahí decidí hace un año pasar de Consultor a Junior en programación y desde ahí empezó mi viaje empecé haciendo paginas estáticas como FrontEnd y continuo desarrollando habilidades en la creación de aplicaciones en modelos como MVC.
+                        </p>
+                    </section>
+                    <section id="img-aboutme">
+                        <img src="img/imgretocada.png" alt="">
+                    </section>
+            </div>
+       </div>
+       
+        
+       <div  id="experience" >
+        <h1> <i class="fa fa-code-fork" aria-hidden="true"></i> Experience</h1>
+        </div>
+        <div class="container-experience">
+           
+            <div  class="section">
+                <span class="title-card">
+                        <h1>Titulo</h1>
+                </span>
+                <section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iste esse, odio ipsum laudantium earum atque molestiae. Quasi mollitia quidem, officiis qui velit neque officia id in est consectetur iusto.</p>
+                </section>
+            </div>
+            
+            <div  class="section">
+                <span class="title-card">
+                    <h1>Titulo</h1>
+                </span>
+                <section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iste esse, odio ipsum laudantium earum atque molestiae. Quasi mollitia quidem, officiis qui velit neque officia id in est consectetur iusto.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="section">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero facilis illo, hic totam laboriosam vitae necessitatibus eligendi voluptatem, mollitia veniam natus fugit quos ipsam animi incidunt facere saepe? Eius, nobis.</p>
         </div>
     </div>
     </div>
