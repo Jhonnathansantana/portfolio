@@ -75,6 +75,9 @@
   margin-bottom: 0px;
   margin-top: 0px;
 }
+.title-nav a {
+  text-decoration: none;
+}
 .title-nav h2, .title-nav h3 {
   color: #33FFA9;
   margin: 0px;
@@ -173,14 +176,13 @@ body h1, body h2, body h3 {
 
 .section {
   background-color: white;
-  box-shadow: 0px 0px 1px 0px;
+  box-shadow: 0px 0px 2px 0px;
 }
 
 .title-card {
-  background-color: none;
   display: inline-block;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0;
 }
 
 .section {
@@ -262,6 +264,8 @@ body h1, body h2, body h3 {
 
   .container-aboutme {
     flex-wrap: wrap-reverse;
+    text-align: center;
+    padding: 5%;
   }
 }
 .welcome {
@@ -274,9 +278,6 @@ body h1, body h2, body h3 {
 
 .container-aboutme {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px;
   background-color: #242424;
   color: white;
 }
@@ -299,6 +300,70 @@ body h1, body h2, body h3 {
   border-radius: 50%;
   width: 100%;
   max-width: 200px;
+}
+
+#projects {
+  text-align: center;
+}
+
+.container-experience.projects {
+  text-align: center;
+  align-items: center;
+}
+.container-experience.projects .section {
+  font-size: 1rem;
+  background: white;
+}
+.container-experience.projects .section .title-card {
+  position: relative;
+  top: -80px;
+}
+.container-experience.projects .section .title-card h1 {
+  font-size: 1.2rem;
+  color: white;
+}
+.container-experience.projects .section img {
+  max-width: 60%;
+}
+
+#curva {
+  background-color: #242424;
+  height: 80px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.triangulo {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #242424;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: 50%;
+}
+
+.btn.website {
+  float: right;
+  margin: 2%;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+}
+.btn.website a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+  letter-spacing: 2px;
+}
+.btn.website:hover {
+  color: #242424;
+}
+.btn.website:hover a {
+  color: #242424;
 }
 
 /*# sourceMappingURL=style.css.map */
