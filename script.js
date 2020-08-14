@@ -9,6 +9,10 @@ function closenav(){
     ex.classList.remove("open-menu");
 };
 
+ScrollReveal().reveal('.postscript' , {delay: 300});
+ScrollReveal().reveal('.container-aboutme' , {delay: 300});
+ScrollReveal().reveal('.section' , {delay: 500});
+
 /*function alt (){
     var v = document.querySelector("c-home").clientHeight;
     //const exp =document.querySelector("#experience");
