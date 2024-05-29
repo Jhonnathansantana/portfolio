@@ -1,7 +1,7 @@
-## Ruta de inplementacion 
+## Portafolio de proyectos V1
 
-### Crear Directorios
+### ¿Que encontraras en este Portfolio?
 
-Crearemos un directorio basico de estructura plana y dentro de ella creamos un directorio de componentes basado en el Framework Bulma donde el archivo style.sass importara los demas estilos divididos en componentes mas chicos.
+Encontraras en este repósitorio proyectos personales que voy recopilando. Tambien Libros, Manuales, Referencias.
 
 
