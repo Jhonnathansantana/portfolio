@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "head.sass"
-    ],
-    "names": [],
-    "file": "head.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"head.css"}
