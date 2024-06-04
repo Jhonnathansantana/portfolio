@@ -21,5 +21,3 @@ ScrollReveal().reveal('.section' , {delay: 500});
     //exp.style.add()
     alert(v);
 };*/
-
-
